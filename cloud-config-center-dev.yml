@@ -1,2 +1,11 @@
-config:
-  info:"master branch,springcloud-config/config-dev.yml version=1"
+server:
+  port: 8082
+spring:
+  application:
+    name: mycloud
+eureka:
+  client:
+    service-url:
+        defaultZone: http://localhost:8081/eureka/
+  instance:
+    prefer-ip-address: true
